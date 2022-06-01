@@ -1,0 +1,28 @@
+Motor pentru executia de script-uri la distanta:
+- Clientii se conecteaza la server - da
+
+- si publica o lista de script-uri identificate prin nume unic la nivelul server-ului - da
+
+
+- Server-ul tine lista clientilor impreuna cu asocierea ce script pe care client se gaseste - da
+
+- Pe durata unei sesiuni cu server-ul un client nu-si poate modifica lista de script-uri disponibile - da
+
+- Un client poate publica pe server o comanda compusa identificata printr-un 
+nume unic la nivelul server-ului, constand intr-o secventa de script-uri 
+apelabile in conducta cu un fisier de intrare primit ca argument - da
+
+- Clientii pot suprascrie comenzile deja publicate prin publicarea pe server 
+a uneia cu acelasi nume; - da
+
+- Clientii pot solicita stergerea unei comenzi de pe server pe baza numelui acesteia; - da
+
+
+urmand ca iesirea generata de primul script din secventa sa fie trimisa ca intrare 
+pentru cel de-al doilea si tot asa pana la ultimul script a carui iesire 
+va constitui rezultatul executiei comenzii;
+
+Server-ul primeste fisiere pentru executia unei comenzi compuse identificata 
+dupa numele fisierului de intrare care trebuie sa coincida cu cel al comenzii de executat;
+Fisierul rezultat in urma executiei comenzii este trimis clientului care a 
+initiat executia comenzii. - da
